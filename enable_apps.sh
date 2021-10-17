@@ -6,7 +6,7 @@ cp /usr/share/applications/org.corectrl.corectrl.desktop ~/.config/autostart/org
 sudo touch /etc/polkit-1/rules.d/90-corectrl.rules
 sudo pacman -S flatpak --noconfirm
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-flatpak install org.gimp.GIMP
+flatpak install org.gimp.GIMP --noconfirm
 yay -S tesseract tesseract-data-eng leptonica --noconfirm
 pip install normcap
 sudo mkdir /media
