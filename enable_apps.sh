@@ -17,4 +17,5 @@ systemctl enable teamviewerd -sudoloop
 gsettings set org.cinnamon.desktop.default-applications.terminal exec konsole
 yay -S nordic-kde-git nordic-theme-git kvantum-theme-nordic-git sddm-nordic-theme-git --noconfirm
 touch ~/.smbcred
+sudo gpasswd -a $USER input
 echo "Update GRUB for AMD & edit .smbcred"
