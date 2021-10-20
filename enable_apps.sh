@@ -19,4 +19,8 @@ yay -S nordic-kde-git nordic-theme-git kvantum-theme-nordic-git sddm-nordic-them
 touch ~/.smbcred
 sudo gpasswd -a $USER input
 systemctl enable teamviewerd
+systemctl start cronie
+systemctl start cronie.service 
+systemctl enable cronie
+systemctl enable cronie.service
 echo "Update GRUB for AMD & edit .smbcred"
