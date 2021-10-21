@@ -23,4 +23,5 @@ systemctl start cronie
 systemctl start cronie.service 
 systemctl enable cronie
 systemctl enable cronie.service
+yay -Syyu corectrl --noconfirm
 echo "Update GRUB for AMD & edit .smbcred"
