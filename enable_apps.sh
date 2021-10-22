@@ -18,11 +18,11 @@ gsettings set org.cinnamon.desktop.default-applications.terminal exec konsole
 yay -S nordic-kde-git nordic-theme-git kvantum-theme-nordic-git sddm-nordic-theme-git --noconfirm
 touch ~/.smbcred
 sudo gpasswd -a $USER input
-systemctl enable teamviewerd
-systemctl start cronie
-systemctl start cronie.service 
-systemctl enable cronie
-systemctl enable cronie.service
+systemctl enable teamviewerd --sudoloop
+systemctl start cronie --sudoloop
+systemctl start cronie.service --sudoloop
+systemctl enable cronie --sudoloop
+systemctl enable cronie.service --sudoloop
 sudo systemctl enable bluetooth --sudoloop
 sudo systemctl enable --now bluetooth -sudoloop
 yay -S bluedevil bluez bluez-utils
