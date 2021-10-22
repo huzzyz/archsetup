@@ -28,5 +28,5 @@ sudo systemctl enable bluetooth --sudoloop
 sudo systemctl enable --now bluetooth -sudoloop
 yay -S bluedevil bluez bluez-utils
 libinput-gestures-setup autostart && libinput-gestures-setup start
-
+kwallet.sh && bash_fix.sh
 echo "Update GRUB for AMD & edit .smbcred"
