@@ -30,7 +30,5 @@ libinput-gestures-setup autostart && libinput-gestures-setup start
 kwallet.sh && bash_fix.sh
 kwriteconfig5 --file kwinrc --group ModifierOnlyShortcuts --key Meta "org.kde.krunner,/App,,toggleDisplay"
 qdbus org.kde.KWin /KWin reconfigure
-mkdir -p ~/.local/share/kservices5/
-ln -s ~/.local/share/kwin/scripts/krohnkite/metadata.desktop ~/.local/share/kservices5/krohnkite.desktopw
 
 echo "Update GRUB for AMD & edit .smbcred"
