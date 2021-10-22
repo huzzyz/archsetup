@@ -24,4 +24,9 @@ systemctl start cronie.service
 systemctl enable cronie
 systemctl enable cronie.service
 yay -Syyu corectrl --noconfirm
+sudo systemctl enable bluetooth --sudoloop
+sudo systemctl enable --now bluetooth -sudoloop
+yay -S bluedevil bluez bluez-utils
+libinput-gestures-setup autostart && libinput-gestures-setup start
+
 echo "Update GRUB for AMD & edit .smbcred"
