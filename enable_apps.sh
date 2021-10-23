@@ -25,12 +25,16 @@ systemctl enable cronie.service --sudoloop
 sudo systemctl enable bluetooth --sudoloop
 sudo systemctl enable --now bluetooth -sudoloop
 libinput-gestures-setup autostart && libinput-gestures-setup start
-kwallet.sh && bash_fix.sh
 kwriteconfig5 --file kwinrc --group ModifierOnlyShortcuts --key Meta "org.kde.krunner,/App,,toggleDisplay"
 qdbus org.kde.KWin /KWin reconfigure
 yay -S corectrl --noconfirm
 echo "---------------------------------------------------------------------"
 echo "---------------------------------------------------------------------"
+echo "---------------------------------------------------------------------"
+chmod +x ~/archsetup/kwallet.sh && chmod +x ~/archsetup/bash_fix.sh
+echo "---------------------------------------------------------------------"
+echo "---------------------------------------------------------------------"
+./bash_fix.sh && ./kwallet.sh
 echo "---------------------------------------------------------------------"
 echo "---------------------------------------------------------------------"
 echo "-----------------------FINISHED--------------------------------------"
