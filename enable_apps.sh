@@ -28,6 +28,9 @@ libinput-gestures-setup autostart && libinput-gestures-setup start
 kwriteconfig5 --file kwinrc --group ModifierOnlyShortcuts --key Meta "org.kde.krunner,/App,,toggleDisplay"
 qdbus org.kde.KWin /KWin reconfigure
 yay -S corectrl --noconfirm
+sudo ln -s /etc/fonts/conf.avail/70-no-bitmaps.conf /etc/fonts/conf.d
+sudo ln -s /etc/fonts/conf.avail/10-sub-pixel-rgb.conf /etc/fonts/conf.d
+sudo ln -s /etc/fonts/conf.avail/11-lcdfilter-default.conf /etc/fonts/conf.d
 echo "---------------------------------------------------------------------"
 echo "---------------------------------------------------------------------"
 echo "---------------------------------------------------------------------"
